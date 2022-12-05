@@ -1,7 +1,7 @@
 # Sant-Resume
-                                                                                    Bracken Sant
-                                                                   https://github.com/bracken576?tab=repositories
-                                                                        903-439-5495	|    bsant576@byui.edu
+                                                                       Bracken Sant
+                                                       https://github.com/bracken576?tab=repositories
+                                                              903-439-5495	|  bsant576@byui.edu
 # Summary
 I have been programming for 6 years in Java, 4 years in Python, and 1 year in C#. I have also dabbled in other programming languages, but these are the ones that I use the most. I love to solve problems and learn more about programming. I also love to go on hikes and do anything outdoors really. 
 # Skills
