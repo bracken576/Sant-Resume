@@ -1,7 +1,7 @@
 # Sant-Resume
-                                          Bracken Sant
-                          https://github.com/bracken576?tab=repositories
-                                903-439-5495	|    bsant576@byui.edu
+                                                                                    Bracken Sant
+                                                                   https://github.com/bracken576?tab=repositories
+                                                                        903-439-5495	|    bsant576@byui.edu
 # Summary
 I have been programming for 6 years in Java, 4 years in Python, and 1 year in C#. I have also dabbled in other programming languages, but these are the ones that I use the most. I love to solve problems and learn more about programming. I also love to go on hikes and do anything outdoors really. 
 # Skills
@@ -18,7 +18,7 @@ I have been programming for 6 years in Java, 4 years in Python, and 1 year in C#
 •	Object-Oriented Programming Teamwork and Collaboration
 
 # Experience
-Smoker/Meat Cutter, Bodacious Bar-b-q, February 2018-July 2020, Sulphur Springs, TX
+## Smoker/Meat Cutter, Bodacious Bar-b-q, February 2018-July 2020, Sulphur Springs, TX
 
 •	Answered Customer Questions about specific products and cut meat to specifications
 
@@ -30,7 +30,7 @@ Smoker/Meat Cutter, Bodacious Bar-b-q, February 2018-July 2020, Sulphur Springs,
 
 •	Moved heavy items.
 
-Programming Intern, Fidelity Express, September 2019-March 2020, Sulphur Springs, TX
+## Programming Intern, Fidelity Express, September 2019-March 2020, Sulphur Springs, TX
 
 •	Demonstrated self-reliance by meeting and exceeding workflow needs.
 
@@ -42,7 +42,7 @@ Programming Intern, Fidelity Express, September 2019-March 2020, Sulphur Springs
 
 •	Compiled data and worked on programming to sort through data.
 
-Missionary, Church of Jesus Christ of Latter-Day Saints, August 2020-August 2021, Salt Lake City, UT.
+## Missionary, Church of Jesus Christ of Latter-Day Saints, August 2020-August 2021, Salt Lake City, UT.
 
 # Education and Training
 High School Diploma from Sulphur Springs High School, Sulphur Springs TX May 2020
