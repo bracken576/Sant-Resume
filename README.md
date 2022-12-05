@@ -47,11 +47,5 @@ I have been programming for 6 years in Java, 4 years in Python, and 1 year in C#
 
 ## Missionary, Church of Jesus Christ of Latter-Day Saints, August 2020-August 2021, Salt Lake City, UT.
 
-# Education and Training
-High School Diploma from Sulphur Springs High School, Sulphur Springs TX May 2020
-
-•	National Honor Society Treasurer
-
-•	Participated in Computer Science Academic UIL
 # Certifications
 •	Java Certified through Microsoft Exam 98-388
