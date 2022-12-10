@@ -8,17 +8,17 @@
 # Summary
 I have been programming for 6 years in Java, 4 years in Python, and 1 year in C#. I have also dabbled in other programming languages, but these are the ones that I use the most. I love to solve problems and learn more about programming. I also love to go on hikes and do anything outdoors really. 
 # Skills
-•	Complex Problem-Solving		Decision Making
+•	Complex Problem-Solving		      Decision Making
 
-•	Team Coordination			    Attention to Detail
+•	Team Coordination			          Attention to Detail
 
-•	Safe Food Handling			  Debugging and Troubleshooting	
+•	Safe Food Handling			        Debugging and Troubleshooting	
 
-•	Inventory Management      Python Programming Language
+•	Inventory Management            Python Programming Language
 
-•	Java Programming Language  C# Programming Language
+•	Java Programming Language       C# Programming Language
 
-•	Object-Oriented Programming Teamwork and Collaboration
+•	Object-Oriented Programming     Teamwork and Collaboration
 
 # Experience
 ## Smoker/Meat Cutter, Bodacious Bar-b-q, February 2018-July 2020, Sulphur Springs, TX
@@ -44,6 +44,8 @@ I have been programming for 6 years in Java, 4 years in Python, and 1 year in C#
 •	Helped install a large IBM server at workplace.
 
 •	Compiled data and worked on programming to sort through data.
+
+* Communicated with team in order to work effecient.
 
 ## Missionary, Church of Jesus Christ of Latter-Day Saints, August 2020-August 2021, Salt Lake City, UT.
 
