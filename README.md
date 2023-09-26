@@ -2,7 +2,7 @@
 Bracken Sant   
 https://github.com/bracken576/Sant-Resume.git   
 903-439-5495 | bsant576@byui.edu   
-linkedin.com/in/bracken-sant-70b76a192
+[Linked-In Profile](linkedin.com/in/bracken-sant-70b76a192)
 
 # Summary
 I have been programming for 4 years in Python and 1 year in R. I have also used other programming languages, but these are the ones that I am the most comfortable with and the most applicable to data science. I have studied statistics and am familiar with multiple libraries in Python and R used for data manipulation and visualization. 
