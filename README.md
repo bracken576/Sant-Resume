@@ -6,40 +6,36 @@ https://github.com/bracken576/Sant-Resume.git
 # Summary
 I have been programming for 4 years in Python and 1 year in R. I have also used other programming languages, but these are the ones that I am the most comfortable with and the most applicable to data science. I have studied statistics and am familiar with multiple libraries in Python and R used for data manipulation and visualization. 
 # Skills
-•	Problem Solving &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •  SQL Programming Language
+•	Data Manipulation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • R (Advanced)
 
-•	Data Visualization &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •   Attention to Detail
+•	Data Visualization &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Machine Learning
 
-•	Python Programming Language &nbsp;&nbsp;&nbsp;&nbsp; •   Java Programming Language	
+•	Python (Advanced) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Git	
 
-•	C# Programming Language &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •   Teamwork and Collaboration
+•	MySQL   
 
-•	R Progamming Language &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •   Data Analysis
-
-•	Data Manipulation
+# Education:
+**Data Science Major, Brigham Young University Idaho, April 2022 - Dec 2025**
 
 # Experience
-## Smoker/Meat Cutter, Bodacious Bar-b-q, February 2018-July 2020, Sulphur Springs, TX
+## Math & Data Science TA, Brigham Young University Idaho, January 2024 - Present, Rexburg, ID
 
-•	Answered Customer Questions about specific products and cut meat to specifications
+•	Worked with instructor to create curriculum within a Statistics class in R.
 
-•	Trained new employees on cleanliness and various types of meat cuts.
+•	Helped students work through errors in code and helped them become independent.
 
-•	Worked at a fast pace to get out orders.
+•	Helped students download software and fix issues with installations.
+
+## Data Science Tutor, Brigham Young University Idaho, January 2024 - Present, Rexburg, ID
+• Helped students understand the fundamentals of R and Python programming in the Data Science field.  
+
+• Worked with others to establish an open place for learning and teaching.
+
+• Demonstrated coding techniques and how to utilize functions within R and Python.
 
 ## Programming Intern, Fidelity Express, September 2019-March 2020, Sulphur Springs, TX
-
-•	Demonstrated self-reliance by meeting and exceeding workflow needs.
-
-•	Helped install a large IBM server at workplace.
-
 •	Compiled data and worked on programming to sort through data.
 
-• Communicated with team in order to work effeciently.
+• Communicated with co-workers to work more effectively.
 
-## Missionary, Church of Jesus Christ of Latter-Day Saints, August 2020-August 2021, Salt Lake City, UT.
-• Polished communication skills   
-• Developed leadership skills as I worked with other groups of missionaries.
 
-# Certifications
-•	Java Certified through Microsoft Exam 98-388
