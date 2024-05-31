@@ -20,11 +20,13 @@ I have been programming for 4 years in Python and 1 year in R. I have also used 
 # Experience
 ## Math & Data Science TA, Brigham Young University Idaho, January 2024 - Present, Rexburg, ID
 
-•	Worked with instructor to create curriculum within a Statistics class in R.
+•	Worked with instructor to create and test curriculum within a Statistics class in R.
 
 •	Helped students work through errors in code and helped them become independent.
 
 •	Helped students download software and fix issues with installations.
+
+•	Helped students understand how to make good graphs and how to manipulate data in Python and R.
 
 ## Data Science Tutor, Brigham Young University Idaho, January 2024 - Present, Rexburg, ID
 • Helped students understand the fundamentals of R and Python programming in the Data Science field.  
