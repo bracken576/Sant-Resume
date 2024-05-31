@@ -1,5 +1,5 @@
 ---
-date: "November 30, 2023"
+date: "May 31, 2024"
 title: "Distance Between the Savior's Names"
 execute:
   keep-md: true
@@ -27,6 +27,7 @@ library(pander)
 library(purrr)
 library(readr)
 library(rio)
+library(forcats)
 ```
 :::
 
@@ -38,6 +39,8 @@ scriptures <- import("http://scriptures.nephi.org/downloads/lds-scriptures.csv.z
 saviors_names <-read_rds("https://byuistats.github.io/M335/data/BoM_SaviorNames.rds") %>% 
   pull(name) %>% 
   str_c(collapse = "|")
+
+
 
 bom <- scriptures %>% 
   filter(volume_title == "Book of Mormon") 
@@ -101,21 +104,25 @@ mean_dist <- dist_between_bom %>%
 
 
 ggplot() +
-  geom_boxplot(data=dist_between_bom, aes(x=reorder(book_short_title, dist_between, mean), y=dist_between, fill=reorder(book_short_title, dist_between, mean)), outlier.shape=NA) +
-  geom_point(data=mean_dist, aes(x=reorder(book_short_title, the_mean), y=the_mean)) +
+  geom_boxplot(data=dist_between_bom, aes(x=fct_reorder(book_short_title, dist_between, mean), y=dist_between, fill=reorder(book_short_title, dist_between, mean)), outlier.shape=NA) +
+  geom_point(data=mean_dist, aes(x=fct_reorder(book_short_title, the_mean), y=the_mean)) +
   geom_label_repel(data=mean_dist, aes(x=reorder(book_short_title, the_mean), y=the_mean, label=the_mean), nudge_y = -10000, size=3.5, segment.color='transparent', max.overlaps=20) +
   coord_cartesian(ylim = c(-10,250)) +
   scale_fill_hue(h=c(170,260), l=45) +
+  theme_bw() +
+  theme(panel.grid = element_blank()) +
   labs(
     x="Books in BoM",
     y="Distance Between Savior's Names",
     title="Distance Between Savior's Names by Book in the Book of Mormon"
   ) +
-  guides(fill="none")
+  guides(fill="none") +
+  theme_bw() +
+  theme(panel.grid = element_blank())
 ```
 
 ::: {.cell-output-display}
-![](DistanceSaviorsNames_files/figure-html/unnamed-chunk-4-1.png){width=672}
+![](DistanceSaviorsNames_files/figure-html/unnamed-chunk-4-1.png){width=768}
 :::
 :::
 
