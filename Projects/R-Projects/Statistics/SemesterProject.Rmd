@@ -1,0 +1,120 @@
+---
+title: "Semester Project"
+output: 
+  html_document:
+    theme: cerulean
+    code_folding: hide
+---
+
+```{r include=FALSE}
+library(mosaic)
+library(car)
+library(pander)
+library(tidyverse)
+library(ggrepel)
+library(forcats)
+library(readr)
+library(R.utils)
+library(DT)
+```
+
+# Vaccinations and Hospitalizations
+
+```{r}
+vacs <- read_csv("vaccinations.csv", show_col_types = FALSE)
+hosp <- read_csv("hospitalizations.csv", show_col_types = FALSE)
+
+vacs2 <- vacs %>% 
+  filter(location_key %in% c("AR") & date >= "2020-12-30" & date<="2022-05-20") %>% 
+  mutate(
+    npv = new_persons_vaccinated
+  ) %>% 
+  select(date, location_key, npv)
+
+hosp2 <- hosp %>% 
+  filter(location_key %in% c("AR") & date >= "2020-12-30", date<="2022-05-20") %>% 
+  mutate(
+    nhp = new_hospitalized_patients
+  ) %>% 
+  select(date, location_key, nhp)
+
+vacs_hosp <- vacs2 %>%
+  full_join(hosp2, join_by("location_key"=="location_key", "date"=="date"))
+
+```
+
+## Background
+
+This data looks at Argentina Corona virus data from late 2020 to mid 2022, including hospitalizations and vaccinations against the Corona virus. The data is from daily new vaccinations or hospitalizations, and I will be testing if the number of new daily vaccinations has a correlation with the number of new daily hospitalizations. You can find these data sets along with others in [Covid Data Sets](https://github.com/GoogleCloudPlatform/covid-19-open-data/blob/main/docs/table-by-sex.md)   
+   
+   
+Here is a sample from the data set: npv standing for new persons vaccinated and nhp standing for new hospitalized patients
+```{r}
+datatable(vacs_hosp)
+```
+
+## Question & Hypothesis
+
+Does the number of new vaccinations correlate with the number of new hospitalizations?
+
+
+$$
+H_0: \beta_1 = 0 \\  
+H_a: \beta_1 \neq 0
+$$
+
+$$
+α = .05
+$$
+
+
+
+If the slope or Beta 1 is equal to 0 then it means that there is not a dependent relationship between daily count of vaccinations and hospitalizations in Argentina per day.   
+However, if the slope or Beta 1 is not equal to 0 then it may have a dependent relationship between the daily count of vaccinations and hospitalizations in Argentina per day.
+
+## Checking Conditions
+
+```{r}
+covid.lm <- lm(nhp ~ npv,data=vacs_hosp)
+
+par(mfrow=c(1,3))
+plot(covid.lm,which=1:2)
+plot(covid.lm$residuals)
+```
+
+
+The Residuals versus Fitted-values Plot appears to show that the data is normal since there aren't any patterns within the plot.   
+The QQ plot is concerning, however, since many points are off the plot, but since there are so many points we will continue with the test anyway.   
+The Residuals versus Order Plot does appear to have a pattern but I believe that it is due to natural spikes in Covid that happen with any seasonal illness like the flu.
+
+## Graphical Summary
+
+```{r}
+ggplot() +
+  geom_point(data=vacs_hosp, aes(y=nhp, x=npv)) +
+  geom_abline(data=covid.lm, aes(intercept=covid.lm$coefficients[1], slope=covid.lm$coefficients[2])) +
+  labs(
+    x="New Vacinations",
+    y="New Hospitalizations",
+    title="Argentina Corona Virus Data December 2020 - May 2022"
+  )
+```
+
+
+Most of the points appear to be far away from the line, so it the line doesn't appear to be a good fit for the data and will be checked with the R^2^ value in the numerical summary. It does appear to go through the center of the points, however, so they could still have a correlation. 
+
+## Numerical Summary/ Linear Regression Test
+
+```{r}
+pander(summary(covid.lm))
+```
+
+### Linear Regression Test Analysis
+The R^2^ value is low, so the line of best fit isn't good for this model. It may be better to look further into the model and maybe make a multilinear regression further on.   
+As we can see here the P-value for the linear regression test came out to basically 0 at 3.9*10^-40^ which is below our alpha of 0.05. Therefore, we have enough evidence to suggest that the number of new vaccinations and hospitalizations in Argentina for the Corona Virus have a correlation. The equation for our line of best fit estimate is: 
+
+$$
+{\hat{Y}_\text{New Hospitalizations}} = {347.1(b_0)} + {0.004038(b_1)} {X_\text{New Vaccinations}}
+$$ 
+
+Which in the context of the test means that at 0 vaccinations per day in Argentina the estimate would be around 347 hospitalizations per day and for every increase in 1 vaccination per day the number of hospitalizations per day would increase by 0.004038, which would be about 248 vaccinations for 1 increase in number of hospitalizations per day.
