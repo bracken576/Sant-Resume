@@ -35,9 +35,11 @@ I have been programming for 4 years in Python and 1 year in R. I have also used 
 
 • Demonstrated coding techniques and how to utilize functions within R and Python.
 
-## Programming Intern, Fidelity Express, September 2019-March 2020, Sulphur Springs, TX
-•	Compiled data and worked on programming to sort through data.
+## Manager of Data Science Lab, Brigham Young University Idaho, April 2024 - Present, Rexburg, ID
+• Oraganized and created schedule for tutors to work in the Data Science Lab.
 
-• Communicated with co-workers to work more effectively.
+• Helped to train tutors to further understand how to work with students.
+
+• Trained tutors on new curiculum introduced in classes: Github and Github pages. 
 
 
