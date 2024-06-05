@@ -40,6 +40,6 @@ I have been programming for 4 years in Python and 1 year in R. I have also used 
 
 • Helped to train tutors to further understand how to work with students.
 
-• Trained tutors on new curriculum introduced in classes: Github and Github pages. 
+• Trained tutors on new curriculum introduced in classes: Github and Github Pages. 
 
 
