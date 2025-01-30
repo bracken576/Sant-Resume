@@ -1,0 +1,25 @@
+﻿ID number,Left or Right,Injured or Control,Duration of immobilization (days),Duration of treatment (days),Treatment type,Sac time point (days post injury),Midsaggital quadrant,Midsaggital slice (estimate),Capsule start slice,Capsule end slice,Cartilage start slice,Cartilage end slice,Image/elbow quality
+6342L,L,Control,N/A (Control),N/A (Control),N/A (Control),42,Top right,217,182,343,213,289,Orientation is offset by about 45 degrees
+6342R,R,Injured,42,None,None,42,Bottom right,297,210,382,240,333,Normal orientation
+C051L,L,Control,N/A (Control),N/A (Control),N/A (Control),42,Bottom right,594,407,618,485,632,Orientation slightly off but not too bad
+6343R,R,Injured,42,None,None,42,Bottom right,505,316,550,322,442,Normal orientation
+C052L,L,Control,N/A (Control),N/A (Control),N/A (Control),42,Bottom right,333,243,413,318,410,Normal orientation
+6127L,L,Injured,21,0,None,21,Bottom right,269,184,369,287,365,Normal orientation but humerus has bone fragments sticking out into muscle
+6126L,L,Injured,21,0,None,21,Top right,329,230,373,232,314,Normal orientation
+6344R,R,Injured,42,0,None,42,Top right,366,231,447,328,423,Normal orientation
+C053L,L,Control,N/A (Control),N/A (Control),N/A (Control),42,Bottom right,206,163,370,168,277,Orientation slightly off but not too bad
+C054L,L,Control,N/A (Control),N/A (Control),N/A (Control),42,Top right,267,197,357,222,336,"Normal orientation, muscle looks odd- slightly blurry?"
+6139,L,Injured,3,39,Free Mobilization,42,Top right,254,217,394,233,323,Normal orientation but elbow appears dislocated
+6140,L,Injured,3,39,Free Mobilization,42,Top right,282,170,351,206,302,Orientation is off by about 45 degrees and image is blurry
+6306,L,Injured,7,35,Free Mobilization,42,Top right,354,218,387,275,374,"Orientation slightly off but not too bad, also elbow appears dislocated"
+6308,L,Injured,7,35,Free Mobilization,42,Top right,229,168,366,186,291,Normal orientation
+6312,L,Injured,14,28,Free Mobilization,42,Bottom right,266,165,352,190,286,Normal orientation
+6313,L,Injured,14,28,Free Mobilization,42,Top right,309,200,405,240,340,Normal orientation
+6314,L,Injured,21,21,Free Mobilization,42,Bottom right,300,204,379,223,312,Normal orientation
+6315,L,Injured,21,21,Free Mobilization,42,Top right,248,198,418,230,316,Normal orientation
+6012,L,Injured,3,0,None,3,Top right,257,140,335,189,270,"Normal orientation but elbow appears dislocated, black blobs on image (air pockets?)"
+6013,L,Injured,3,0,None,3,Top right,192,223,394,275,349,Orientation is off by about 45 degrees
+6007,L,Injured,7,0,None,7,Top right,263,210,356,239,341,Orientation is off by about 45 degrees. Elbow appears dislocated
+6008,L,Injured,7,0,None,7,Bottom right,283,228,392,271,364,Normal orientation
+6578L,L,Injured,14,21,Wheel,35,Bottom right,303,190,358,268,360,Normal orientation
+6580L,L,Injured,21,21,Wheel,42,Bottom right,297,189,380,261,354,Normal orientation
