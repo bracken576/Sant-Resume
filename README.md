@@ -15,9 +15,9 @@ Throughout 7 years of programming, I have developed a love for problem solving, 
 |• Streamlit Dashboards        |• Big Data (PySpark & Polars)                |
 
 # Education:
-## Data Science Major, Brigham Young University Idaho, April 2022 - July 2025
+## Data Science Bachelors, Brigham Young University Idaho, April 2022 - July 2025
 
-## Statistics, Brigham Young University, September 2025 - 
+## Statistics Masters, Brigham Young University, September 2025 - 
 
 # Experience
 ## Data Scientist, Data Think, January 2025 - Present, Rexburg, ID
