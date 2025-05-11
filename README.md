@@ -1,45 +1,59 @@
 # Sant-Resume
+
 Bracken Sant   
 https://github.com/bracken576/Sant-Resume.git   
 903-439-5495 | bsant576@byui.edu   
 [Linked-In Profile](https://linkedin.com/in/bracken-sant-70b76a192)
 # Summary
-I have been programming for 4 years in Python and 1 year in R. I have also used other programming languages, but these are the ones that I am the most comfortable with and the most applicable to data science. I have studied statistics and am familiar with multiple libraries in Python and R used for data manipulation and visualization. 
+Throughout 7 years of programming, I have developed a love for problem solving, programming, and sifting through data. I have also gained a respect for what is possible in machine learning as I have done image recognition models in tensorflow and PyTorch with X-rays, mammograms, and elbow MRIs. 
 # Skills
-•	Data Manipulation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • R (Advanced)
-
-•	Data Visualization &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Machine Learning (tenserflow, sklearn, pytorch)
-
-•	Python (Advanced) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Git	
-
-•	MySQL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Big Data (PySpark & Polars)
+|               |                              |
+|-----------------------------|---------------------------------------------|
+|• Data Manipulation           |• R (Advanced)                                |
+|• Data Visualization          |• Machine Learning (TensorFlow, MONAI, PyTorch) |
+|• Python (Advanced)           |• Git                                         |
+|• Streamlit Dashboards        |• Big Data (PySpark & Polars)                |
 
 # Education:
-**Data Science Major, Brigham Young University Idaho, April 2022 - July 2025**
+## **Data Science Major, Brigham Young University Idaho, April 2022 - July 2025**
 
 # Experience
+## Data Scientist, Data Think, January 2025 - Present, Rexburg, ID
+• Coordinated with others to design streamlit analytics dashboards and deploy on Google Cloud Run
+
+• Created packages in R and Python to support work in streamlit applications and research in medical studies
+
+• Made Fastapi endpoints with SQLAlchemy and Pydantic to connect to a Postgress database
+
+## Manager of Data Science Lab, Brigham Young University Idaho, January 2024 - April 2025, Rexburg, ID
+
+• Oraganized and created schedule for tutors to work in the Data Science Lab
+
+• Trained tutors to further understand how to work with students
+
+• Trained tutors on new curriculum introduced in classes: Github and Github Pages
+
+• Taught students fundamentals of R and Python programming
+
 ## Math & Data Science TA, Brigham Young University Idaho, January 2024 - Present, Rexburg, ID
 
-•	Worked with instructor to create and test curriculum within a Statistics class in R.
+• Collaborated with instructor to create curriculum within a Statistics class in R
 
-•	Helped students work through errors in code and helped them become independent.
+• Explained how to work through errors in code to students to help students become independent
 
-•	Helped students download software and fix issues with installations.
+• Helped students download software and fix issues with installations.
 
-•	Helped students understand how to make good graphs and how to manipulate data in Python and R.
+# Projects
+## Cancer Recognition, April 2024
+• Used TensorFlow package in python to build a CNN to categorize tumors in mammograms as benign or malignant
 
-## Data Science Tutor, Brigham Young University Idaho, January 2024 - Present, Rexburg, ID
-• Helped students understand the fundamentals of R and Python programming in the Data Science field.  
+• Reached 95% accuracy and 95% recall score, compared to 93% accuracy and 78% recall score acheived by doctors
 
-• Worked with others to establish an open place for learning and teaching.
+## Unsupervised PTJC, January 2025 - April 2025
+• Utilized PyTorch and MONAI packages in python to build a segmentation model as well as a classification model
 
-• Demonstrated coding techniques and how to utilize functions within R and Python.
+• Worked with MRI .nii images of elbows to create segmented slices to use in classification model
 
-## Manager of Data Science Lab, Brigham Young University Idaho, April 2024 - Present, Rexburg, ID
-• Oraganized and created schedule for tutors to work in the Data Science Lab.
+• Created an unsupervised model with a Spectral Clustering model for level of capsule fibrosis
 
-• Helped to train tutors to further understand how to work with students.
-
-• Trained tutors on new curriculum introduced in classes: Github and Github Pages. 
-
-
+• Designed streamlit app with pipeline for the models
