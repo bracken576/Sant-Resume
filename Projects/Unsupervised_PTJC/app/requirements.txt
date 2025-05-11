@@ -1,0 +1,12 @@
+nibabel
+torch
+torchvision
+monai
+pandas
+numpy
+Pillow
+scikit-image
+scikit-learn
+streamlit
+matplotlib
+opencv-python

@@ -1,0 +1,162 @@
+
+```{python}
+import os
+import numpy as np
+import torch
+from torch.utils.data import DataLoader
+import matplotlib.pyplot as plt
+from monai.networks.nets import UNet
+from monai.transforms import (
+    Compose, LoadImaged, EnsureChannelFirstd, Resized, NormalizeIntensityd,
+    RandCropByPosNegLabeld, RandFlipd, RandRotate90d, ToTensord
+)
+from monai.data import Dataset, CacheDataset, decollate_batch
+from monai.metrics import DiceMetric
+from monai.losses import DiceLoss
+from monai.inferers import sliding_window_inference
+from monai.visualize import plot_2d_or_3d_image
+
+```
+
+
+```{python}
+data_dir = "path_to_your_dataset"
+train_files = [
+    {"image": os.path.join(data_dir, "image1.nii.gz"), "label": os.path.join(data_dir, "label1.nii.gz")},
+    {"image": os.path.join(data_dir, "image2.nii.gz"), "label": os.path.join(data_dir, "label2.nii.gz")},
+    # Add more data here...
+]
+
+val_files = [
+    {"image": os.path.join(data_dir, "image3.nii.gz"), "label": os.path.join(data_dir, "label3.nii.gz")},
+    {"image": os.path.join(data_dir, "image4.nii.gz"), "label": os.path.join(data_dir, "label4.nii.gz")},
+]
+```
+
+
+```{python}
+train_transforms = Compose([
+    LoadImaged(keys=["image", "label"]),
+    EnsureChannelFirstd(keys=["image", "label"]),
+    NormalizeIntensityd(keys=["image"], nonzero=True, channel_wise=True),
+    Resized(keys=["image", "label"], spatial_size=(128, 128, 64)),  # Reshape volumes
+    RandCropByPosNegLabeld(
+        keys=["image", "label"], label_key="label", spatial_size=(96, 96, 48),
+        pos=1, neg=1, num_samples=4, image_key="image", image_threshold=0
+    ),
+    RandFlipd(keys=["image", "label"], spatial_axis=[0, 1, 2], prob=0.5),
+    RandRotate90d(keys=["image", "label"], prob=0.5, spatial_axes=(0, 1)),
+    ToTensord(keys=["image", "label"]),
+])
+
+val_transforms = Compose([
+    LoadImaged(keys=["image", "label"]),
+    EnsureChannelFirstd(keys=["image", "label"]),
+    NormalizeIntensityd(keys=["image"], nonzero=True, channel_wise=True),
+    Resized(keys=["image", "label"], spatial_size=(128, 128, 64)),
+    ToTensord(keys=["image", "label"]),
+])
+
+```
+
+
+```{python}
+# Training dataset and loader
+train_ds = CacheDataset(data=train_files, transform=train_transforms, cache_rate=1.0, num_workers=4)
+train_loader = DataLoader(train_ds, batch_size=2, shuffle=True, num_workers=4)
+
+# Validation dataset and loader
+val_ds = CacheDataset(data=val_files, transform=val_transforms, cache_rate=1.0, num_workers=4)
+val_loader = DataLoader(val_ds, batch_size=1, shuffle=False, num_workers=4)
+
+```
+
+
+```{python}
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+# Define 3D U-Net
+model = UNet(
+    spatial_dims=3,
+    in_channels=1,  # Grayscale input
+    out_channels=2,  # Background and foreground
+    channels=(16, 32, 64, 128, 256),  # Number of filters at each level
+    strides=(2, 2, 2, 2),  # Pooling strides
+    num_res_units=2,  # Residual units
+).to(device)
+
+```
+
+
+```{python}
+# Dice loss for segmentation
+loss_function = DiceLoss(to_onehot_y=True, softmax=True)
+
+# Adam optimizer
+optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
+
+# Dice metric for evaluation
+dice_metric = DiceMetric(include_background=True, reduction="mean")
+
+```
+
+
+```{python}
+num_epochs = 50
+val_interval = 2  # Validate every 2 epochs
+best_metric = -1
+best_metric_epoch = -1
+
+for epoch in range(num_epochs):
+    print(f"Epoch {epoch + 1}/{num_epochs}")
+    model.train()
+    epoch_loss = 0
+
+    for batch in train_loader:
+        inputs, labels = batch["image"].to(device), batch["label"].to(device)
+        optimizer.zero_grad()
+        outputs = model(inputs)
+        loss = loss_function(outputs, labels)
+        loss.backward()
+        optimizer.step()
+        epoch_loss += loss.item()
+
+    print(f"Training Loss: {epoch_loss / len(train_loader)}")
+
+    # Validation
+    if (epoch + 1) % val_interval == 0:
+        model.eval()
+        with torch.no_grad():
+            val_dice = 0
+            for val_batch in val_loader:
+                val_inputs, val_labels = val_batch["image"].to(device), val_batch["label"].to(device)
+                val_outputs = sliding_window_inference(val_inputs, (96, 96, 48), 4, model)
+                val_outputs = torch.argmax(val_outputs, dim=1)
+                dice_metric(y_pred=val_outputs, y=val_labels)
+            
+            val_dice = dice_metric.aggregate().item()
+            dice_metric.reset()
+            print(f"Validation Dice Score: {val_dice}")
+            if val_dice > best_metric:
+                best_metric = val_dice
+                best_metric_epoch = epoch + 1
+                torch.save(model.state_dict(), "best_metric_model.pth")
+                print("Saved new best model!")
+
+```
+
+
+```{python}
+model.eval()
+with torch.no_grad():
+    val_inputs, val_labels = next(iter(val_loader))
+    val_inputs = val_inputs.to(device)
+    val_outputs = sliding_window_inference(val_inputs, (96, 96, 48), 4, model)
+    val_outputs = torch.argmax(val_outputs, dim=1).cpu()
+
+# Visualize a random slice
+plot_2d_or_3d_image(val_inputs, index=0, title="Input Image")
+plot_2d_or_3d_image(val_labels, index=0, title="Ground Truth")
+plot_2d_or_3d_image(val_outputs, index=0, title="Predicted Segmentation")
+
+```
