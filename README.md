@@ -49,7 +49,7 @@ Throughout 7 years of programming, I have developed a love for problem solving, 
 # Projects
 ## Cancer Recognition, April 2024
 
-[Link to repo](https://github.com/bracken576/Sant-Resume/tree/61c21b280c20f72e68a9806efd291d294622011a/Projects/BreastCancerML)
+[Link to repo](https://github.com/bracken576/Sant-Resume/tree/c0363c03c4041e73a6a5af392fa2a9eb3031d992/Projects/BreastCancerML)
 
 • Used TensorFlow package in python to build a CNN to categorize tumors in mammograms as benign or malignant
 
@@ -57,7 +57,7 @@ Throughout 7 years of programming, I have developed a love for problem solving, 
 
 ## Unsupervised PTJC, January 2025 - April 2025
 
-[Link to repo](https://github.com/bracken576/Sant-Resume/tree/61c21b280c20f72e68a9806efd291d294622011a/Projects/Unsupervised_PTJC)
+[Link to repo](https://github.com/bracken576/Sant-Resume/tree/c0363c03c4041e73a6a5af392fa2a9eb3031d992/Projects/Unsupervised_PTJC)
 
 • Utilized PyTorch and MONAI packages in python to build a segmentation model as well as a classification model
 
