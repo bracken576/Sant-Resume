@@ -1,6 +1,10 @@
 ### Overview
 We will be working with Washington University in St. Louis. A professor has given us some MRIs of elbows. We will be doing a segmentation for each image to categorize parts of the image for the different types of tissue. Their main objective is to classify the images for PTJC (Post-traumatic Joint Contracture) they want to look at damage to the elbow and classify it that way.
 
+### Page Examples
+[ML Page](https://github.com/bracken576/Sant-Resume/blob/4210a66b56daa55d03a82703950539ac858a5927/Projects/Unsupervised_PTJC/page_examples/ml_page.pdf)
+[Segmentation Page](https://github.com/bracken576/Sant-Resume/blob/4210a66b56daa55d03a82703950539ac858a5927/Projects/Unsupervised_PTJC/page_examples/segmentation.pdf)
+
 ### Tissue
 The tissue they specify in the power point to look at for damage:
 * Fat
@@ -16,6 +20,12 @@ They emphasize using the Capsule and have traces for capsule already.
 * Use a vision transformer to help classify **control** or **injured** from segmented images.
 * Make an unsupervised model for classifying level of fibrosis in elbow capsule. 
 * Make a web app through Streamlit and Docker. 
+
+### Running the Streamlit
+```
+cd app
+streamlit run app.py --server.maxUploadSize 400
+```
 
 ### Links to GitHub Gists
 * [UNET Segmentation](https://colab.research.google.com/gist/bracken576/51f4c4ad7eed644195c9f80afe153972/advancedsegmentation2.ipynb)
