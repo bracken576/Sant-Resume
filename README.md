@@ -49,7 +49,7 @@ Throughout 7 years of programming, I have developed a love for problem solving, 
 # Projects
 ## Cancer Recognition, April 2024
 
-[Link to repo](https://github.com/bracken576/Sant-Resume/tree/c0363c03c4041e73a6a5af392fa2a9eb3031d992/Projects/BreastCancerML)
+[Link to repo](https://github.com/bracken576/Sant-Resume/tree/b0f46ea1732219ca5dfbf11eea4438689a5de4cf/Projects/BreastCancerML)
 
 • Used TensorFlow package in python to build a CNN to categorize tumors in mammograms as benign or malignant
 
