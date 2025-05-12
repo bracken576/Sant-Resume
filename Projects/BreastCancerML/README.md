@@ -33,8 +33,6 @@ positive way. I believe that some of the reasons for this to be because the imag
 white, the usable parts of the image are fairly small in the image, and there are multiple shots
 of each image at different angles because the images are from four-view mammography
 imaging.
-The first image is an example of malignant and the second image is an example of benign.
-
 
 ## III. Machine Learning Model
 
