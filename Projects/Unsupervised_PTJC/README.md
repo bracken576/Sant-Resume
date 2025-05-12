@@ -2,7 +2,7 @@
 We will be working with Washington University in St. Louis. A professor has given us some MRIs of elbows. We will be doing a segmentation for each image to categorize parts of the image for the different types of tissue. Their main objective is to classify the images for PTJC (Post-traumatic Joint Contracture) they want to look at damage to the elbow and classify it that way.
 
 ### Page Examples
-* <a href="https://github.com/bracken576/Sant-Resume/blob/4210a66b56daa55d03a82703950539ac858a5927/Projects/Unsupervised_PTJC/page_examples/ml_page.pdf" target="_blank">ML Page</a>
+* <a href="https://github.com/bracken576/Sant-Resume/raw/4210a66b56daa55d03a82703950539ac858a5927/Projects/Unsupervised_PTJC/page_examples/ml_page.pdf" target="_blank">ML Page</a>
 
 * <a href="https://github.com/bracken576/Sant-Resume/raw/4210a66b56daa55d03a82703950539ac858a5927/Projects/Unsupervised_PTJC/page_examples/segmentation.pdf" target="_blank">Segmentation Page</a>
 
