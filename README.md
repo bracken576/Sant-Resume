@@ -38,7 +38,7 @@ Throughout 7 years of programming, I have developed a love for problem solving, 
 
 • Taught students fundamentals of R and Python programming
 
-## Math & Data Science TA, Brigham Young University Idaho, January 2024 - Present, Rexburg, ID
+## Math & Data Science TA, Brigham Young University Idaho, January 2024 - December 2024, Rexburg, ID
 
 • Collaborated with instructor to create curriculum within a Statistics class in R
 
