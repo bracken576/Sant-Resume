@@ -4,7 +4,7 @@
 
 ## I. Introduction
 
-According to the National Breast Cancer Foundation’s article “Breast Cancer Facts & Stats”, “
+According to the National Breast Cancer Foundation’s article “Breast Cancer Facts & Stats”, “1
 in 8 women in the United States will be diagnosed with breast cancer in her lifetime...” and
 “approximately 30% of all new female cancer diagnoses will be breast cancer.” This is a very
 high percentage when compared to most other cancers for women, the exemption being skin
@@ -20,7 +20,7 @@ between $400-$600 and for CT breast cancer imaging being between $350-$500 accor
 The Women’s Imaging Center’s article “What is the Difference Between MRI and CT Scans?”.
 There are a large percentage of tumors or lumps that aren’t cancerous and don’t need to be
 worried about or further inspected, so in an attempt to make diagnosing more affordable and
-to be more available I have made a convoluted neural network that predicts from
+to be more available I have made a convolutional neural network that predicts from
 mammography imaging whether the breast cancer is benign or malignant.
 
 ## II. Data Processing
